@@ -1,0 +1,180 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 2%;
+}
+
+.main-header,
+.contact,
+.footer-nav {
+	background-color: #fafafa;
+}
+
+.main-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-nav a {
+	display: block;
+	width: 90%;
+	text-align: center;
+	background-color: #fff;
+	margin: 0.15em;
+	padding: 0.5em;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	align-self: center;
+}
+
+.introduction p,
+.contact p {
+	margin: 1em;
+	padding: 1.5em;
+	color: lightgray;
+	text-align: center;
+	line-height: 150%;
+}
+
+
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5em;
+	padding: 1em;
+}
+
+.portfolio-item {
+	text-align: center;
+	line-height: 150%;
+	margin: 0.5em;
+}
+
+.portfolio-item p {
+	border: 1px solid red;
+	padding: 0.5em 1em;
+}
+
+.portfolio-item img {
+	width: 100%;
+}
+
+.contact {
+	padding: 2em 0.1em;
+}
+
+#phone,
+#email {
+	color: gray;
+	font-weight: bold;
+	margin-left: 1em;
+}
+
+
+h1, h2 {
+	text-align: center;
+}
+
+.footer-nav {
+	border-top: 1px solid lightgray;
+}
+
+.footer-link {
+	display: none;
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1em;
+}
+
+.footer-nav h3 {
+	margin-right: auto;
+}
+
+.link-top {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+
+@media (min-width: 768px) {
+
+	
+	.footer-nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.main-nav a {
+		background-color: #fafafa;
+		width: 20%;
+		border: 1px solid red;
+	}
+
+	.introduction {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.portfolio {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.portfolio-item {
+		width: 40%;
+		flex-grow: 1;
+	}
+
+	.link-top {
+		display: none;
+	}
+
+	.footer-link {
+		display: inline-block;
+		margin: 1em;
+		text-decoration: none;
+		color: gray;
+		font-weight: bold;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-nav,
+	.footer-nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.main-nav h1 {
+		margin-right: auto;
+	}
+
+	.introduction {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.portfolio {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.portfolio-item {
+		width: 30%;
+	}
+} 
+
