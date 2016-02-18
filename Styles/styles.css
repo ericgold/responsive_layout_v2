@@ -1,3 +1,7 @@
+* {
+	border: 1px solid red;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -34,15 +38,15 @@
 
 .introduction p,
 .contact p {
-	margin: 1em;
-	padding: 1.5em;
+	margin: 0.5em 1em;
+	padding: 0.5em 1em;
 	color: lightgray;
 	text-align: center;
 	line-height: 150%;
 }
 
 .intro-image {
-	margin: 3em 1em 1em 0;
+	margin: 3em 0 1em 0;
 }
 
 .portfolio-container {
@@ -82,12 +86,8 @@
 }
 
 
-h1, h2 {
+h1, h2, h3 {
 	text-align: center;
-}
-
-.footer-nav {
-	border-top: 1px solid lightgray;
 }
 
 .footer-link {
@@ -100,6 +100,8 @@ h1, h2 {
 	justify-content: flex-end;
 	align-items: center;
 	padding: 1em;
+	margin: 0 1em;
+	border-top: 1px solid lightgray;
 }
 
 .footer-nav h3 {
@@ -132,7 +134,6 @@ h1, h2 {
 	.main-nav a {
 		background-color: #fafafa;
 		width: 15%;
-		
 	}
 
 	.introduction {
@@ -143,6 +144,11 @@ h1, h2 {
 	.introduction p {
 		align-self: flex-start;
 		text-align: left;
+		margin-top: 2em;
+	}
+
+	.intro-image {
+		margin: 2em;
 	}
 
 	.portfolio {
@@ -173,22 +179,30 @@ h1, h2 {
 	
 	.main-header {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
+		
 	}
 
 	.main-nav,
 	.footer-nav {
 		display: flex;
 		flex-direction: row;
-		border: 1px solid red;
+	}
+
+	.main-nav {
+		justify-content: space-between;
+		margin-right: 1em;
 	}
 
 	.main-nav a {
-		margin-right: 2em;
+		margin: 1em;
+		padding: .5em;
+		flex: 1;
 	}
 
 	.main-header h1 {
 		margin-right: auto;
+		margin-left: 1em;
 	}
 
 	.introduction {
