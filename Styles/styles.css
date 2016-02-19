@@ -1,5 +1,5 @@
-* {
-	border: 1px solid red;
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -149,6 +149,7 @@ h1, h2, h3 {
 
 	.intro-image {
 		margin: 2em;
+		width: 40%;
 	}
 
 	.portfolio {
@@ -208,6 +209,10 @@ h1, h2, h3 {
 	.introduction {
 		display: flex;
 		flex-direction: row-reverse;
+	}
+
+	.intro-image {
+		width: 70%;
 	}
 
 	.portfolio {
