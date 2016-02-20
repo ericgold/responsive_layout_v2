@@ -1,6 +1,4 @@
-body {
-	font-family: 'Open Sans', sans-serif;
-}
+/* GENERAL STYLES */
 
 .container {
 	display: flex;
@@ -8,8 +6,15 @@ body {
 	padding: 2%;
 	max-width: 1200px;
 	margin: auto;
-	background-color: #fafafa;
+	background-color: #e3f4fa;
+	font-family: 'Open Sans', sans-serif;
 }
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+/* NAVIGATION STYLES */
 
 .main-nav {
 	display: flex;
@@ -29,6 +34,12 @@ body {
 	align-self: center;
 }
 
+.main-nav a:hover {
+		color: #69945a;
+}
+
+/* INTRODUCTION STYLES */
+
 .introduction {
 	display: flex;
 	flex-direction: column;
@@ -40,24 +51,31 @@ body {
 .contact p {
 	margin: 0.5em 1em;
 	padding: 0.5em 1em;
-	color: lightgray;
+	color: #31452a;
 	text-align: center;
 	line-height: 150%;
 }
 
 .intro-image {
-	margin: 3em 0 1em 0;
+	margin: 3em 1em 1em 1em;
 }
+
+/* PORTFOLIO STYLES */
 
 .portfolio-container {
 	background-color: #fff;
 	padding-top: 2em;
 }
+
 .portfolio {
 	display: flex;
 	flex-direction: column;
 	margin: 0.5em;
 	padding: 1em;
+}
+
+#portfolio-two {
+	margin-top: 2em;
 }
 
 .portfolio-item {
@@ -74,6 +92,7 @@ body {
 	width: 100%;
 }
 
+/* CONTACT STYLES (contact p is under intro)*/
 .contact {
 	padding: 2em 0.1em;
 }
@@ -85,10 +104,7 @@ body {
 	margin-left: 1em;
 }
 
-
-h1, h2, h3 {
-	text-align: center;
-}
+/* FOOTER STYLES */
 
 .footer-link {
 	display: none;
@@ -114,6 +130,12 @@ h1, h2, h3 {
 	color: black;
 }
 
+.link-top:hover {
+	color: #69945a;
+}
+
+
+/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
 
@@ -132,7 +154,7 @@ h1, h2, h3 {
 	}
 
 	.main-nav a {
-		background-color: #fafafa;
+		background-color: #e3f4fa;
 		width: 15%;
 	}
 
@@ -174,6 +196,11 @@ h1, h2, h3 {
 		color: gray;
 		font-weight: bold;
 	}
+
+	.footer-link:hover {
+		color: #69945a;
+	}
+
 }
 
 @media (min-width: 1024px) {
@@ -191,14 +218,15 @@ h1, h2, h3 {
 	}
 
 	.main-nav {
-		justify-content: space-between;
+		padding: 0.5em;
 		margin-right: 1em;
 	}
 
 	.main-nav a {
-		margin: 1em;
-		padding: .5em;
+		margin-left: 1em;
 		flex: 1;
+		width: auto;
+		display: inline;
 	}
 
 	.main-header h1 {
